@@ -1,0 +1,24 @@
+- article [ref=e16]:
+  - heading "Request Admin Account" [level=2] [ref=e17]
+  - paragraph [ref=e18]: Submit a request for an admin account.
+  - generic [ref=e19]:
+    - generic [ref=e20]:
+      - text: Full Name
+      - textbox "Full Name" [ref=e21]:
+        - /placeholder: ""
+    - generic [ref=e22]:
+      - text: Email Address
+      - textbox "Email Address" [ref=e23]:
+        - /placeholder: ""
+    - generic [ref=e24]:
+      - text: Password
+      - textbox "Password" [ref=e25]:
+        - /placeholder: ""
+    - generic [ref=e26]:
+      - paragraph [ref=e27]: "Note:"
+      - paragraph [ref=e28]: Your admin account request will be reviewed by a super admin. Upon approval, you will be able to login with your email and password.
+    - button "Create Account" [ref=e29] [cursor=pointer]
+  - paragraph [ref=e30]:
+    - text: Already have an account?
+    - link "Sign in" [ref=e31] [cursor=pointer]:
+      - /url: /login

@@ -1,0 +1,56 @@
+- generic [ref=e89]:
+  - complementary [ref=e90]:
+    - generic [ref=e91]:
+      - paragraph [ref=e92]: SaaS Platform
+      - heading "Company Console" [level=1] [ref=e93]
+    - navigation [ref=e94]:
+      - link "Dashboard" [ref=e95] [cursor=pointer]:
+        - /url: /dashboard
+      - link "Tasks" [ref=e96] [cursor=pointer]:
+        - /url: /tasks
+      - link "Attendance" [ref=e97] [cursor=pointer]:
+        - /url: /attendance
+      - link "Expenses" [active] [ref=e98] [cursor=pointer]:
+        - /url: /expenses
+  - generic [ref=e99]:
+    - banner [ref=e100]:
+      - generic [ref=e101]:
+        - generic [ref=e102]:
+          - paragraph [ref=e103]: Welcome back
+          - generic [ref=e104]:
+            - paragraph [ref=e105]: Alice Employee
+            - generic [ref=e106]: Employee
+        - button "Logout" [ref=e107] [cursor=pointer]
+    - main [ref=e108]:
+      - generic [ref=e161]:
+        - generic [ref=e163]:
+          - heading "Expenses" [level=1] [ref=e164]
+          - paragraph [ref=e165]: Submit and track your expense requests.
+        - generic [ref=e166]:
+          - generic [ref=e167]:
+            - heading "Submit Expense" [level=3] [ref=e168]
+            - generic [ref=e169]:
+              - generic [ref=e170]:
+                - generic [ref=e171]: Amount
+                - spinbutton [ref=e172]
+              - generic [ref=e173]:
+                - generic [ref=e174]: Category
+                - combobox [ref=e175]:
+                  - option "Select category" [selected]
+                  - option "Travel"
+                  - option "Meals"
+                  - option "Office Supplies"
+                  - option "Equipment"
+                  - option "Other"
+              - generic [ref=e176]:
+                - generic [ref=e177]: Description
+                - textbox "Describe the expense..." [ref=e178]
+              - button "Submit Expense" [ref=e179] [cursor=pointer]
+          - generic [ref=e180]:
+            - generic [ref=e181]:
+              - heading "Your Expenses" [level=3] [ref=e182]
+              - button "Refresh" [ref=e183] [cursor=pointer]
+            - generic [ref=e184]:
+              - img [ref=e185]
+              - heading "No expenses" [level=3] [ref=e187]
+              - paragraph [ref=e188]: Submit your first expense above

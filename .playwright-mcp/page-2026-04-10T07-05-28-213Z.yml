@@ -1,0 +1,53 @@
+- generic [ref=e451]:
+  - complementary [ref=e453]:
+    - generic [ref=e454]:
+      - paragraph [ref=e455]: SaaS Platform
+      - heading "Company Console" [level=1] [ref=e456]
+    - navigation [ref=e457]:
+      - link "Dashboard" [ref=e458] [cursor=pointer]:
+        - /url: /dashboard
+      - link "Team Management" [ref=e459] [cursor=pointer]:
+        - /url: /team
+      - link "Tasks" [ref=e460] [cursor=pointer]:
+        - /url: /tasks
+      - link "Attendance" [ref=e461] [cursor=pointer]:
+        - /url: /attendance
+      - link "Expenses" [ref=e462] [cursor=pointer]:
+        - /url: /expenses
+      - link "Sales" [ref=e463] [cursor=pointer]:
+        - /url: /sales
+      - link "Approvals" [ref=e464] [cursor=pointer]:
+        - /url: /approvals
+      - link "Settings" [ref=e465] [cursor=pointer]:
+        - /url: /settings
+      - link "Users" [active] [ref=e466] [cursor=pointer]:
+        - /url: /users
+      - link "My Profile" [ref=e467] [cursor=pointer]:
+        - /url: /profile
+  - generic [ref=e468]:
+    - banner [ref=e469]:
+      - generic [ref=e470]:
+        - generic [ref=e471]:
+          - paragraph [ref=e472]: Welcome back
+          - generic [ref=e473]:
+            - paragraph [ref=e474]: Admin One
+            - generic [ref=e475]: Admin
+        - button "Logout" [ref=e476] [cursor=pointer]
+    - main [ref=e477]:
+      - generic [ref=e558]:
+        - generic [ref=e559]:
+          - generic [ref=e560]:
+            - heading "Users" [level=2] [ref=e561]
+            - paragraph [ref=e562]: Manage system users and permissions.
+          - generic [ref=e563]:
+            - button "+ Add User" [ref=e564] [cursor=pointer]
+            - button "📥 Import Excel" [ref=e565] [cursor=pointer]
+        - article [ref=e566]:
+          - textbox [ref=e569]:
+            - /placeholder: Search users by name or email...
+          - table [ref=e571]:
+            - rowgroup:
+              - row
+            - rowgroup [ref=e572]:
+              - row "No records found." [ref=e573]:
+                - cell "No records found." [ref=e574]

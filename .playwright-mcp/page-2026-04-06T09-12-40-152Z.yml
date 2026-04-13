@@ -1,0 +1,73 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - generic [ref=e5]:
+        - paragraph [ref=e6]: SaaS Platform
+        - heading "Company Console" [level=1] [ref=e7]
+      - navigation [ref=e8]:
+        - link "Dashboard" [ref=e9] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Employees" [ref=e10] [cursor=pointer]:
+          - /url: /employees
+        - link "Tasks" [ref=e11] [cursor=pointer]:
+          - /url: /tasks
+        - link "Attendance" [ref=e12] [cursor=pointer]:
+          - /url: /attendance
+        - link "Expenses" [ref=e13] [cursor=pointer]:
+          - /url: /expenses
+        - link "Approvals" [ref=e14] [cursor=pointer]:
+          - /url: /approvals
+        - link "Settings" [ref=e15] [cursor=pointer]:
+          - /url: /settings
+    - generic [ref=e16]:
+      - banner [ref=e17]:
+        - generic [ref=e18]:
+          - generic [ref=e19]:
+            - paragraph [ref=e20]: Welcome back
+            - generic [ref=e21]:
+              - paragraph [ref=e22]: John Admin
+              - generic [ref=e23]: Admin
+          - button "Logout" [ref=e24] [cursor=pointer]
+      - main [ref=e25]:
+        - generic [ref=e27]:
+          - generic [ref=e29]:
+            - heading "Expenses" [level=1] [ref=e30]
+            - paragraph [ref=e31]: View all employee expense requests
+          - generic [ref=e32]:
+            - generic [ref=e33]:
+              - heading "All Employee Expenses" [level=3] [ref=e34]
+              - button "Refresh" [ref=e35] [cursor=pointer]
+            - table [ref=e78]:
+              - rowgroup [ref=e79]:
+                - row "Employee Amount Category Description Status Date Actions" [ref=e80]:
+                  - columnheader "Employee" [ref=e81]
+                  - columnheader "Amount" [ref=e82]
+                  - columnheader "Category" [ref=e83]
+                  - columnheader "Description" [ref=e84]
+                  - columnheader "Status" [ref=e85]
+                  - columnheader "Date" [ref=e86]
+                  - columnheader "Actions" [ref=e87]
+              - rowgroup [ref=e88]:
+                - row "Alice Employee $125.00 Equipment Projector for office Rejected Apr 6, 2026 —" [ref=e89]:
+                  - cell "Alice Employee" [ref=e90]
+                  - cell "$125.00" [ref=e91]
+                  - cell "Equipment" [ref=e92]
+                  - cell "Projector for office" [ref=e93]
+                  - cell "Rejected" [ref=e94]:
+                    - generic [ref=e95]: Rejected
+                  - cell "Apr 6, 2026" [ref=e96]
+                  - cell "—" [ref=e97]
+                - row "Alice Employee $75.50 Meals Team lunch with clients Approved Apr 6, 2026 —" [ref=e98]:
+                  - cell "Alice Employee" [ref=e99]
+                  - cell "$75.50" [ref=e100]
+                  - cell "Meals" [ref=e101]
+                  - cell "Team lunch with clients" [ref=e102]
+                  - cell "Approved" [ref=e103]:
+                    - generic [ref=e104]: Approved
+                  - cell "Apr 6, 2026" [ref=e105]
+                  - cell "—" [ref=e106]
+  - generic [ref=e108]:
+    - generic [ref=e109]:
+      - paragraph [ref=e110]: Success
+      - paragraph [ref=e111]: Expense rejected successfully
+    - button "x" [ref=e112] [cursor=pointer]

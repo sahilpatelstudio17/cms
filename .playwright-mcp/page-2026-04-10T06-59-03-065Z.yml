@@ -1,0 +1,26 @@
+- generic [active] [ref=e1]:
+  - article [ref=e76]:
+    - heading "Sign in" [level=2] [ref=e77]
+    - paragraph [ref=e78]: Access your company dashboard.
+    - generic [ref=e79]:
+      - generic [ref=e80]:
+        - text: Email
+        - textbox "Email" [ref=e81]:
+          - /placeholder: ""
+          - text: admin2@example.com
+      - generic [ref=e82]:
+        - text: Password
+        - textbox "Password" [ref=e83]:
+          - /placeholder: ""
+          - text: Admin2123
+      - button "Sign in" [ref=e84] [cursor=pointer]
+    - paragraph [ref=e87]: invalid email or password
+    - paragraph [ref=e85]:
+      - text: New here?
+      - link "Create an account" [ref=e86] [cursor=pointer]:
+        - /url: /signup
+  - generic [ref=e89]:
+    - generic [ref=e90]:
+      - paragraph [ref=e91]: Login Failed
+      - paragraph [ref=e92]: invalid email or password
+    - button "x" [ref=e93] [cursor=pointer]

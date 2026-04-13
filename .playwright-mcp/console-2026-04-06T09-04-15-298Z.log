@@ -1,0 +1,57 @@
+[     272ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:5174/login:0
+[     289ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:5174/favicon.ico:0
+[   18316ms] [WARNING] [Vue warn]: Unhandled error during execution of render function 
+  at <ExpenseApprovalsView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< Proxy(Object) > > 
+  at <RouterView> 
+  at <DashboardLayout onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< Proxy(Object) > > 
+  at <RouterView> 
+  at <App> @ http://localhost:5174/node_modules/.vite/deps/chunk-LZ3HUG3H.js?v=0247d753:2203
+[   18317ms] [WARNING] [Vue warn]: Unhandled error during execution of component update 
+  at <ExpenseApprovalsView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< Proxy(Object) > > 
+  at <RouterView> 
+  at <DashboardLayout onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< Proxy(Object) > > 
+  at <RouterView> 
+  at <App> @ http://localhost:5174/node_modules/.vite/deps/chunk-LZ3HUG3H.js?v=0247d753:2203
+[   18330ms] TypeError: Cannot read properties of undefined (reading 'split')
+    at Proxy.formatCategory (http://localhost:5174/src/views/dashboard/ExpenseApprovalsView.vue:20:6)
+    at http://localhost:5174/src/views/dashboard/ExpenseApprovalsView.vue:196:90
+    at renderList (http://localhost:5174/node_modules/.vite/deps/chunk-LZ3HUG3H.js?v=0247d753:5384:18)
+    at Proxy._sfc_render (http://localhost:5174/src/views/dashboard/ExpenseApprovalsView.vue:183:71)
+    at renderComponentRoot (http://localhost:5174/node_modules/.vite/deps/chunk-LZ3HUG3H.js?v=0247d753:6722:17)
+    at ReactiveEffect.componentUpdateFn [as fn] (http://localhost:5174/node_modules/.vite/deps/chunk-LZ3HUG3H.js?v=0247d753:8368:26)
+    at ReactiveEffect.run (http://localhost:5174/node_modules/.vite/deps/chunk-LZ3HUG3H.js?v=0247d753:507:19)
+    at ReactiveEffect.runIfDirty (http://localhost:5174/node_modules/.vite/deps/chunk-LZ3HUG3H.js?v=0247d753:545:12)
+    at callWithErrorHandling (http://localhost:5174/node_modules/.vite/deps/chunk-LZ3HUG3H.js?v=0247d753:2351:33)
+    at flushJobs (http://localhost:5174/node_modules/.vite/deps/chunk-LZ3HUG3H.js?v=0247d753:2559:9)
+[  168435ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:5174/login:0
+[  216225ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:5174/login:0
+[  385769ms] [WARNING] [Vue warn]: Property "actionInProgress" was accessed during render but is not defined on instance. 
+  at <ExpensesView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< Proxy(Object) > > 
+  at <RouterView> 
+  at <DashboardLayout onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< Proxy(Object) > > 
+  at <RouterView> 
+  at <App> @ http://localhost:5174/node_modules/.vite/deps/chunk-LZ3HUG3H.js?v=0247d753:2203
+[  385773ms] [WARNING] [Vue warn]: Property "actionInProgress" was accessed during render but is not defined on instance. 
+  at <ExpensesView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< Proxy(Object) > > 
+  at <RouterView> 
+  at <DashboardLayout onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< Proxy(Object) > > 
+  at <RouterView> 
+  at <App> @ http://localhost:5174/node_modules/.vite/deps/chunk-LZ3HUG3H.js?v=0247d753:2203
+[  385774ms] [WARNING] [Vue warn]: Property "actionInProgress" was accessed during render but is not defined on instance. 
+  at <ExpensesView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< Proxy(Object) > > 
+  at <RouterView> 
+  at <DashboardLayout onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< Proxy(Object) > > 
+  at <RouterView> 
+  at <App> @ http://localhost:5174/node_modules/.vite/deps/chunk-LZ3HUG3H.js?v=0247d753:2203
+[  385774ms] [WARNING] [Vue warn]: Property "actionInProgress" was accessed during render but is not defined on instance. 
+  at <ExpensesView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< Proxy(Object) > > 
+  at <RouterView> 
+  at <DashboardLayout onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< Proxy(Object) > > 
+  at <RouterView> 
+  at <App> @ http://localhost:5174/node_modules/.vite/deps/chunk-LZ3HUG3H.js?v=0247d753:2203
+[  385774ms] [WARNING] [Vue warn]: Property "showRejectDialog" was accessed during render but is not defined on instance. 
+  at <ExpensesView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< Proxy(Object) > > 
+  at <RouterView> 
+  at <DashboardLayout onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< Proxy(Object) > > 
+  at <RouterView> 
+  at <App> @ http://localhost:5174/node_modules/.vite/deps/chunk-LZ3HUG3H.js?v=0247d753:2203

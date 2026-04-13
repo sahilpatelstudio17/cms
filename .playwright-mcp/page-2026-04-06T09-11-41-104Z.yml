@@ -1,0 +1,65 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e99]:
+    - complementary [ref=e100]:
+      - generic [ref=e101]:
+        - paragraph [ref=e102]: SaaS Platform
+        - heading "Company Console" [level=1] [ref=e103]
+      - navigation [ref=e104]:
+        - link "Dashboard" [ref=e105] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Tasks" [ref=e106] [cursor=pointer]:
+          - /url: /tasks
+        - link "Attendance" [ref=e107] [cursor=pointer]:
+          - /url: /attendance
+        - link "Expenses" [ref=e108] [cursor=pointer]:
+          - /url: /expenses
+    - generic [ref=e109]:
+      - banner [ref=e110]:
+        - generic [ref=e111]:
+          - generic [ref=e112]:
+            - paragraph [ref=e113]: Welcome back
+            - generic [ref=e114]:
+              - paragraph [ref=e115]: Alice Employee
+              - generic [ref=e116]: Employee
+          - button "Logout" [ref=e117] [cursor=pointer]
+      - main [ref=e118]:
+        - generic [ref=e120]:
+          - generic [ref=e121]:
+            - heading "Dashboard" [level=2] [ref=e122]
+            - paragraph [ref=e123]: Track team performance and daily operations at a glance.
+          - generic [ref=e124]:
+            - article [ref=e125]:
+              - generic [ref=e127]:
+                - paragraph [ref=e128]: Total Employees
+                - paragraph [ref=e129]: "24"
+                - paragraph [ref=e130]: +3 this month
+            - article [ref=e131]:
+              - generic [ref=e133]:
+                - paragraph [ref=e134]: Open Tasks
+                - paragraph [ref=e135]: "18"
+                - paragraph [ref=e136]: 7 due today
+            - article [ref=e137]:
+              - generic [ref=e139]:
+                - paragraph [ref=e140]: Attendance Today
+                - paragraph [ref=e141]: 89%
+                - paragraph [ref=e142]: 21 present, 3 absent
+          - generic [ref=e143]:
+            - generic [ref=e144]:
+              - paragraph [ref=e145]: Company Profile
+              - paragraph [ref=e146]: Tech Corp
+              - paragraph [ref=e147]: info@techcorp.com
+            - generic [ref=e148]:
+              - paragraph [ref=e149]: Attendance Summary
+              - list [ref=e150]:
+                - listitem [ref=e151]:
+                  - generic [ref=e154]: Present
+                  - generic [ref=e155]: "21"
+                - listitem [ref=e156]:
+                  - generic [ref=e159]: Absent
+                  - generic [ref=e160]: "3"
+                - listitem [ref=e161]:
+                  - generic [ref=e164]: On Leave
+                  - generic [ref=e165]: "2"
+  - generic [ref=e167]:
+    - paragraph [ref=e169]: Login successful
+    - button "x" [ref=e170] [cursor=pointer]

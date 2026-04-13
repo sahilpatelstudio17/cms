@@ -1,0 +1,57 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e15]:
+    - complementary [ref=e17]:
+      - generic [ref=e18]:
+        - paragraph [ref=e19]: SaaS Platform
+        - heading "Company Console" [level=1] [ref=e20]
+      - navigation [ref=e21]:
+        - link "Admin Dashboard" [ref=e22] [cursor=pointer]:
+          - /url: /super-admin
+        - link "Approvals" [ref=e23] [cursor=pointer]:
+          - /url: /approvals
+        - link "My Profile" [ref=e24] [cursor=pointer]:
+          - /url: /profile
+    - generic [ref=e25]:
+      - banner [ref=e26]:
+        - generic [ref=e27]:
+          - generic [ref=e28]:
+            - paragraph [ref=e29]: Welcome back
+            - generic [ref=e30]:
+              - paragraph [ref=e31]: System SuperAdmin
+              - generic [ref=e32]: Super Admin
+          - button "Logout" [ref=e33] [cursor=pointer]
+      - main [ref=e34]:
+        - generic [ref=e125]:
+          - generic [ref=e127]:
+            - heading "Approvals" [level=1] [ref=e128]
+            - paragraph [ref=e129]: Review and manage pending approval requests.
+          - button "Pending Admin Requests (1)" [ref=e175] [cursor=pointer]
+          - table [ref=e135]:
+            - rowgroup [ref=e136]:
+              - row "Name Email Company ID Requested Actions" [ref=e137]:
+                - columnheader "Name" [ref=e138]
+                - columnheader "Email" [ref=e139]
+                - columnheader "Company" [ref=e140]
+                - columnheader "ID" [ref=e141]
+                - columnheader "Requested" [ref=e142]
+                - columnheader "Actions" [ref=e143]
+            - rowgroup [ref=e144]:
+              - 'row "TestAdmin1 testadmin1@example.com Company One #1 Apr 10, 2026, 12:07 PM Approve Reject" [ref=e159]':
+                - cell "TestAdmin1" [ref=e160]
+                - cell "testadmin1@example.com" [ref=e161]
+                - cell "Company One" [ref=e162]
+                - cell "#1" [ref=e163]
+                - cell "Apr 10, 2026, 12:07 PM" [ref=e164]
+                - cell "Approve Reject" [ref=e165]:
+                  - generic [ref=e166]:
+                    - button "Approve" [ref=e167] [cursor=pointer]:
+                      - img [ref=e168]
+                      - text: Approve
+                    - button "Reject" [ref=e170] [cursor=pointer]:
+                      - img [ref=e171]
+                      - text: Reject
+  - generic [ref=e177]:
+    - generic [ref=e178]:
+      - paragraph [ref=e179]: Success
+      - paragraph [ref=e180]: Admin request approved! New admin account created.
+    - button "x" [ref=e181] [cursor=pointer]

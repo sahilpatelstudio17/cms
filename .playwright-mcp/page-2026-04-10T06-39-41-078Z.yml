@@ -1,0 +1,57 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - complementary [ref=e5]:
+      - generic [ref=e6]:
+        - paragraph [ref=e7]: SaaS Platform
+        - heading "Company Console" [level=1] [ref=e8]
+      - navigation [ref=e9]:
+        - link "Dashboard" [ref=e10] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Team Management" [ref=e11] [cursor=pointer]:
+          - /url: /team
+        - link "Tasks" [ref=e12] [cursor=pointer]:
+          - /url: /tasks
+        - link "Attendance" [ref=e13] [cursor=pointer]:
+          - /url: /attendance
+        - link "Expenses" [ref=e14] [cursor=pointer]:
+          - /url: /expenses
+        - link "Sales" [ref=e15] [cursor=pointer]:
+          - /url: /sales
+        - link "Settings" [ref=e16] [cursor=pointer]:
+          - /url: /settings
+        - link "Users" [ref=e17] [cursor=pointer]:
+          - /url: /users
+        - link "My Profile" [ref=e18] [cursor=pointer]:
+          - /url: /profile
+    - generic [ref=e19]:
+      - banner [ref=e20]:
+        - generic [ref=e21]:
+          - generic [ref=e22]:
+            - paragraph [ref=e23]: Welcome back
+            - generic [ref=e24]:
+              - paragraph [ref=e25]: Admin One
+              - generic [ref=e26]: Admin
+          - button "Logout" [ref=e27] [cursor=pointer]
+      - main [ref=e28]:
+        - generic [ref=e66]:
+          - generic [ref=e67]:
+            - generic [ref=e68]:
+              - heading "Users" [level=2] [ref=e69]
+              - paragraph [ref=e70]: Manage system users and permissions.
+            - generic [ref=e71]:
+              - button "+ Add User" [ref=e72] [cursor=pointer]
+              - button "📥 Import Excel" [ref=e73] [cursor=pointer]
+          - article [ref=e74]:
+            - textbox [ref=e77]:
+              - /placeholder: Search users by name or email...
+            - table [ref=e105]:
+              - rowgroup:
+                - row
+              - rowgroup [ref=e106]:
+                - row "No records found." [ref=e107]:
+                  - cell "No records found." [ref=e108]
+  - generic [ref=e110]:
+    - generic [ref=e111]:
+      - paragraph [ref=e112]: Success
+      - paragraph [ref=e113]: User created successfully
+    - button "x" [ref=e114] [cursor=pointer]

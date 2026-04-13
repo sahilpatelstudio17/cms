@@ -1,0 +1,2 @@
+[      82ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:8080/api/approvals:0
+[      82ms] [ERROR] API Error: {status: 500, message: failed to retrieve approvals, data: Object, url: /approvals, method: get} @ http://localhost:5173/src/services/api.js:36

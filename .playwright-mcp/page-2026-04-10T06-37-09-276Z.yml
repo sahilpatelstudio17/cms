@@ -1,0 +1,23 @@
+- generic [active] [ref=e1]:
+  - article [ref=e33]:
+    - heading "Sign in" [level=2] [ref=e34]
+    - paragraph [ref=e35]: Access your company dashboard.
+    - generic [ref=e36]:
+      - generic [ref=e37]:
+        - text: Email
+        - textbox "Email" [ref=e38]:
+          - /placeholder: ""
+      - generic [ref=e39]:
+        - text: Password
+        - textbox "Password" [ref=e40]:
+          - /placeholder: ""
+      - button "Sign in" [disabled] [ref=e41]
+    - paragraph [ref=e42]:
+      - text: New here?
+      - link "Create an account" [ref=e43] [cursor=pointer]:
+        - /url: /signup
+  - generic [ref=e45]:
+    - generic [ref=e46]:
+      - paragraph [ref=e47]: Admin Signup Request Submitted
+      - paragraph [ref=e48]: Your admin account request has been submitted. A super admin must review and approve your request. You will receive a confirmation once it's been reviewed.
+    - button "x" [ref=e49] [cursor=pointer]

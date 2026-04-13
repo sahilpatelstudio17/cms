@@ -1,0 +1,17 @@
+- article [ref=e183]:
+  - heading "Sign in" [level=2] [ref=e184]
+  - paragraph [ref=e185]: Access your company dashboard.
+  - generic [ref=e186]:
+    - generic [ref=e187]:
+      - text: Email
+      - textbox "Email" [ref=e188]:
+        - /placeholder: ""
+    - generic [ref=e189]:
+      - text: Password
+      - textbox "Password" [ref=e190]:
+        - /placeholder: ""
+    - button "Sign in" [disabled] [ref=e191]
+  - paragraph [ref=e192]:
+    - text: New here?
+    - link "Create an account" [ref=e193] [cursor=pointer]:
+      - /url: /signup

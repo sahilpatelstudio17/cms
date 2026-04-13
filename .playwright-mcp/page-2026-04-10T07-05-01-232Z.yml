@@ -1,0 +1,77 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e451]:
+    - complementary [ref=e453]:
+      - generic [ref=e454]:
+        - paragraph [ref=e455]: SaaS Platform
+        - heading "Company Console" [level=1] [ref=e456]
+      - navigation [ref=e457]:
+        - link "Dashboard" [ref=e458] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Team Management" [ref=e459] [cursor=pointer]:
+          - /url: /team
+        - link "Tasks" [ref=e460] [cursor=pointer]:
+          - /url: /tasks
+        - link "Attendance" [ref=e461] [cursor=pointer]:
+          - /url: /attendance
+        - link "Expenses" [ref=e462] [cursor=pointer]:
+          - /url: /expenses
+        - link "Sales" [ref=e463] [cursor=pointer]:
+          - /url: /sales
+        - link "Approvals" [ref=e464] [cursor=pointer]:
+          - /url: /approvals
+        - link "Settings" [ref=e465] [cursor=pointer]:
+          - /url: /settings
+        - link "Users" [ref=e466] [cursor=pointer]:
+          - /url: /users
+        - link "My Profile" [ref=e467] [cursor=pointer]:
+          - /url: /profile
+    - generic [ref=e468]:
+      - banner [ref=e469]:
+        - generic [ref=e470]:
+          - generic [ref=e471]:
+            - paragraph [ref=e472]: Welcome back
+            - generic [ref=e473]:
+              - paragraph [ref=e474]: Admin One
+              - generic [ref=e475]: Admin
+          - button "Logout" [ref=e476] [cursor=pointer]
+      - main [ref=e477]:
+        - generic [ref=e479]:
+          - generic [ref=e480]:
+            - heading "Dashboard" [level=2] [ref=e481]
+            - paragraph [ref=e482]: Track team performance and daily operations at a glance.
+          - generic [ref=e483]:
+            - article [ref=e484]:
+              - generic [ref=e486]:
+                - paragraph [ref=e487]: Total Employees
+                - paragraph [ref=e488]: "9"
+                - paragraph
+            - article [ref=e489]:
+              - generic [ref=e491]:
+                - paragraph [ref=e492]: Open Tasks
+                - paragraph [ref=e493]: "1"
+                - paragraph
+            - article [ref=e494]:
+              - generic [ref=e496]:
+                - paragraph [ref=e497]: Attendance Today
+                - paragraph [ref=e498]: 0%
+                - paragraph [ref=e499]: 0 present, 9 absent
+          - generic [ref=e500]:
+            - generic [ref=e501]:
+              - paragraph [ref=e502]: Company Profile
+              - paragraph [ref=e503]: Company One
+              - paragraph [ref=e504]: info@Company One.com
+            - generic [ref=e505]:
+              - paragraph [ref=e506]: Attendance Summary
+              - list [ref=e507]:
+                - listitem [ref=e508]:
+                  - generic [ref=e511]: Present
+                  - generic [ref=e512]: "0"
+                - listitem [ref=e513]:
+                  - generic [ref=e516]: Absent
+                  - generic [ref=e517]: "9"
+                - listitem [ref=e518]:
+                  - generic [ref=e521]: On Leave
+                  - generic [ref=e522]: "0"
+  - generic [ref=e524]:
+    - paragraph [ref=e526]: Login successful
+    - button "x" [ref=e527] [cursor=pointer]

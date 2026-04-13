@@ -1,0 +1,250 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-50: #ecfeff;
+  --brand-100: #cffafe;
+  --brand-200: #a5f3fc;
+  --brand-300: #67e8f9;
+  --brand-400: #22d3ee;
+  --brand-500: #06b6d4;
+  --brand-600: #0891b2;
+  --brand-700: #0e7490;
+  --brand-800: #155e75;
+  --brand-900: #164e63;
+
+  --surface-50: #f8fafc;
+  --surface-100: #f1f5f9;
+  --surface-200: #e2e8f0;
+  --surface-300: #cbd5e1;
+  --surface-400: #94a3b8;
+  --surface-500: #64748b;
+  --surface-600: #475569;
+  --surface-700: #334155;
+  --surface-800: #1e293b;
+  --surface-900: #0f172a;
+
+  --danger-50: #fff1f2;
+  --danger-100: #ffe4e6;
+  --danger-200: #fecdd3;
+  --danger-600: #e11d48;
+  --danger-700: #be123c;
+  --danger-800: #9f1239;
+}
+
+@layer base {
+  html,
+  body,
+  #app {
+    @apply min-h-screen;
+  }
+
+  body {
+    @apply bg-slate-100 text-slate-900 antialiased;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-xl bg-white p-6 shadow-sm ring-1 ring-slate-200;
+  }
+}
+
+/*
+  Global color unification: map mixed blue/cyan/gray/slate/rose/red utilities
+  into one consistent brand + neutral + danger palette without touching behavior.
+*/
+@layer utilities {
+  .bg-blue-50,
+  .bg-cyan-50,
+  .bg-slate-50,
+  .bg-gray-50 {
+    background-color: var(--surface-50) !important;
+  }
+
+  .bg-blue-100,
+  .bg-cyan-100 {
+    background-color: var(--brand-100) !important;
+  }
+
+  .bg-blue-600,
+  .bg-cyan-600 {
+    background-color: var(--brand-600) !important;
+  }
+
+  .bg-blue-700,
+  .bg-cyan-700 {
+    background-color: var(--brand-700) !important;
+  }
+
+  .bg-blue-800,
+  .bg-cyan-800 {
+    background-color: var(--brand-800) !important;
+  }
+
+  .text-blue-600,
+  .text-cyan-600 {
+    color: var(--brand-600) !important;
+  }
+
+  .text-blue-700,
+  .text-cyan-700 {
+    color: var(--brand-700) !important;
+  }
+
+  .text-blue-800,
+  .text-cyan-800 {
+    color: var(--brand-800) !important;
+  }
+
+  .border-blue-200,
+  .border-cyan-200 {
+    border-color: var(--brand-200) !important;
+  }
+
+  .border-blue-400,
+  .border-cyan-400 {
+    border-color: var(--brand-400) !important;
+  }
+
+  .border-blue-500,
+  .border-cyan-500,
+  .border-blue-600,
+  .border-cyan-600 {
+    border-color: var(--brand-600) !important;
+  }
+
+  .ring-blue-500,
+  .ring-cyan-500,
+  .ring-brand-500 {
+    --tw-ring-color: var(--brand-600) !important;
+  }
+
+  .border-t-blue-600 {
+    border-top-color: var(--brand-600) !important;
+  }
+
+  .text-gray-500,
+  .text-slate-500 { color: var(--surface-500) !important; }
+
+  .text-gray-600,
+  .text-slate-600 { color: var(--surface-600) !important; }
+
+  .text-gray-700,
+  .text-slate-700 { color: var(--surface-700) !important; }
+
+  .text-gray-800,
+  .text-slate-800 { color: var(--surface-800) !important; }
+
+  .text-gray-900,
+  .text-slate-900 { color: var(--surface-900) !important; }
+
+  .bg-gray-100,
+  .bg-slate-100 { background-color: var(--surface-100) !important; }
+
+  .bg-gray-200,
+  .bg-slate-200 { background-color: var(--surface-200) !important; }
+
+  .bg-gray-300,
+  .bg-slate-300 { background-color: var(--surface-300) !important; }
+
+  .bg-gray-800,
+  .bg-slate-800 { background-color: var(--surface-800) !important; }
+
+  .bg-gray-900,
+  .bg-slate-900 { background-color: var(--surface-900) !important; }
+
+  .border-gray-200,
+  .border-slate-200 { border-color: var(--surface-200) !important; }
+
+  .border-gray-300,
+  .border-slate-300 { border-color: var(--surface-300) !important; }
+
+  .border-gray-700,
+  .border-slate-700 { border-color: var(--surface-700) !important; }
+
+  .border-gray-800,
+  .border-slate-800 { border-color: var(--surface-800) !important; }
+
+  .bg-red-50,
+  .bg-rose-50 { background-color: var(--danger-50) !important; }
+
+  .bg-red-100,
+  .bg-rose-100 { background-color: var(--danger-100) !important; }
+
+  .bg-red-600,
+  .bg-rose-600 { background-color: var(--danger-600) !important; }
+
+  .bg-red-700,
+  .bg-rose-700 { background-color: var(--danger-700) !important; }
+
+  .text-red-600,
+  .text-rose-600 { color: var(--danger-600) !important; }
+
+  .text-red-700,
+  .text-rose-700 { color: var(--danger-700) !important; }
+
+  .text-red-800,
+  .text-rose-800 { color: var(--danger-800) !important; }
+
+  .border-red-200,
+  .border-rose-200,
+  .border-rose-300 { border-color: var(--danger-200) !important; }
+
+  .hover\:bg-blue-50:hover,
+  .hover\:bg-cyan-50:hover,
+  .hover\:bg-slate-50:hover,
+  .hover\:bg-gray-50:hover {
+    background-color: var(--surface-50) !important;
+  }
+
+  .hover\:bg-blue-700:hover,
+  .hover\:bg-cyan-700:hover {
+    background-color: var(--brand-700) !important;
+  }
+
+  .hover\:bg-blue-800:hover,
+  .hover\:bg-cyan-800:hover {
+    background-color: var(--brand-800) !important;
+  }
+
+  .hover\:text-blue-600:hover,
+  .hover\:text-cyan-600:hover {
+    color: var(--brand-600) !important;
+  }
+
+  .hover\:text-blue-700:hover,
+  .hover\:text-cyan-700:hover {
+    color: var(--brand-700) !important;
+  }
+
+  .hover\:border-blue-400:hover,
+  .hover\:border-cyan-400:hover,
+  .hover\:border-blue-500:hover,
+  .hover\:border-cyan-500:hover {
+    border-color: var(--brand-500) !important;
+  }
+
+  .hover\:bg-red-50:hover,
+  .hover\:bg-rose-50:hover {
+    background-color: var(--danger-50) !important;
+  }
+
+  .hover\:bg-red-700:hover,
+  .hover\:bg-rose-700:hover {
+    background-color: var(--danger-700) !important;
+  }
+
+  .focus\:border-blue-500:focus,
+  .focus\:border-blue-600:focus,
+  .focus\:border-cyan-500:focus,
+  .focus\:border-cyan-600:focus {
+    border-color: var(--brand-600) !important;
+  }
+
+  .focus\:ring-blue-500:focus,
+  .focus\:ring-cyan-500:focus {
+    --tw-ring-color: var(--brand-600) !important;
+  }
+}

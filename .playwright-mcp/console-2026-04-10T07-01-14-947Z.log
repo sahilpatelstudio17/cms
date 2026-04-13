@@ -1,0 +1,16 @@
+[      67ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:5173/login:0
+[   85539ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:5173/login:0
+[  129876ms] [LOG] Loaded employees: {items: Array(9), meta: Object} @ http://localhost:5173/src/views/dashboard/TeamManagementView.vue:75
+[  129876ms] [LOG] Filtered employees: Proxy(Array) @ http://localhost:5173/src/views/dashboard/TeamManagementView.vue:77
+[  157476ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:8080/api/approvals:0
+[  157476ms] [ERROR] API Error: {status: 500, message: failed to retrieve approvals, data: Object, url: /approvals, method: get} @ http://localhost:5173/src/services/api.js:36
+[  190026ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:5173/login:0
+[  237278ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:8080/api/approvals:0
+[  237279ms] [ERROR] API Error: {status: 500, message: failed to retrieve approvals, data: Object, url: /approvals, method: get} @ http://localhost:5173/src/services/api.js:36
+[  251223ms] [WARNING] [Vue warn]: Extraneous non-props attributes (closeable) were passed to component but could not be automatically inherited because component renders fragment or text or teleport root nodes. 
+  at <Modal modelValue=false onUpdate:modelValue=fn title="Import Results"  ... > 
+  at <UsersView onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< null > > 
+  at <RouterView> 
+  at <DashboardLayout onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< Proxy(Object) > > 
+  at <RouterView> 
+  at <App> @ http://localhost:5173/node_modules/.vite/deps/chunk-LZ3HUG3H.js?v=0247d753:2203

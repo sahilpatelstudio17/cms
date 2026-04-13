@@ -1,0 +1,50 @@
+- generic [ref=e38]:
+  - complementary [ref=e40]:
+    - generic [ref=e41]:
+      - paragraph [ref=e42]: SaaS Platform
+      - heading "Company Console" [level=1] [ref=e43]
+    - navigation [ref=e44]:
+      - link "Dashboard" [ref=e45] [cursor=pointer]:
+        - /url: /dashboard
+      - link "Team Management" [ref=e46] [cursor=pointer]:
+        - /url: /team
+      - link "Tasks" [ref=e47] [cursor=pointer]:
+        - /url: /tasks
+      - link "Attendance" [ref=e48] [cursor=pointer]:
+        - /url: /attendance
+      - link "Expenses" [ref=e49] [cursor=pointer]:
+        - /url: /expenses
+      - link "Sales" [ref=e50] [cursor=pointer]:
+        - /url: /sales
+      - link "Approvals" [ref=e51] [cursor=pointer]:
+        - /url: /approvals
+      - link "Settings" [ref=e52] [cursor=pointer]:
+        - /url: /settings
+      - link "Users" [ref=e53] [cursor=pointer]:
+        - /url: /users
+      - link "My Profile" [ref=e54] [cursor=pointer]:
+        - /url: /profile
+  - generic [ref=e55]:
+    - banner [ref=e56]:
+      - generic [ref=e57]:
+        - generic [ref=e58]:
+          - paragraph [ref=e59]: Welcome back
+          - generic [ref=e60]:
+            - paragraph [ref=e61]: Admin One
+            - generic [ref=e62]: Admin
+        - button "Logout" [ref=e63] [cursor=pointer]
+    - main [ref=e64]:
+      - generic [ref=e115]:
+        - generic [ref=e117]:
+          - heading "Approvals" [level=1] [ref=e118]
+          - paragraph [ref=e119]: Review and manage pending approval requests.
+        - generic [ref=e121]:
+          - button "User Registrations (0)" [ref=e122] [cursor=pointer]
+          - button "Role Assignments (0)" [ref=e123] [cursor=pointer]
+          - button "Company Signups (0)" [ref=e124] [cursor=pointer]
+          - button "Employee Requests (0)" [ref=e125] [cursor=pointer]
+          - button "Pending User Requests (0)" [active] [ref=e126] [cursor=pointer]
+        - generic [ref=e158]:
+          - img [ref=e159]
+          - heading "No pending user requests" [level=3] [ref=e161]
+          - paragraph [ref=e162]: All user requests have been reviewed.

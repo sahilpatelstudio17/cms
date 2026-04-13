@@ -1,0 +1,137 @@
+- generic [ref=e194]:
+  - complementary [ref=e196]:
+    - generic [ref=e197]:
+      - paragraph [ref=e198]: SaaS Platform
+      - heading "Company Console" [level=1] [ref=e199]
+    - navigation [ref=e200]:
+      - link "Dashboard" [ref=e201] [cursor=pointer]:
+        - /url: /dashboard
+      - link "Team Management" [active] [ref=e202] [cursor=pointer]:
+        - /url: /team
+      - link "Tasks" [ref=e203] [cursor=pointer]:
+        - /url: /tasks
+      - link "Attendance" [ref=e204] [cursor=pointer]:
+        - /url: /attendance
+      - link "Expenses" [ref=e205] [cursor=pointer]:
+        - /url: /expenses
+      - link "Sales" [ref=e206] [cursor=pointer]:
+        - /url: /sales
+      - link "Approvals" [ref=e207] [cursor=pointer]:
+        - /url: /approvals
+      - link "Settings" [ref=e208] [cursor=pointer]:
+        - /url: /settings
+      - link "Users" [ref=e209] [cursor=pointer]:
+        - /url: /users
+      - link "My Profile" [ref=e210] [cursor=pointer]:
+        - /url: /profile
+  - generic [ref=e211]:
+    - banner [ref=e212]:
+      - generic [ref=e213]:
+        - generic [ref=e214]:
+          - paragraph [ref=e215]: Welcome back
+          - generic [ref=e216]:
+            - paragraph [ref=e217]: Admin2
+            - generic [ref=e218]: Admin
+        - button "Logout" [ref=e219] [cursor=pointer]
+    - main [ref=e220]:
+      - generic [ref=e271]:
+        - generic [ref=e273]:
+          - heading "Team Management" [level=1] [ref=e274]
+          - paragraph [ref=e275]: Manage Sales, Developers, and Staff
+        - generic [ref=e276]:
+          - button "All Employees (9)" [ref=e277] [cursor=pointer]
+          - button "Managers (2)" [ref=e278] [cursor=pointer]
+          - button "Salesmen (3)" [ref=e279] [cursor=pointer]
+          - button "Developers (1)" [ref=e280] [cursor=pointer]
+          - button "Staff (1)" [ref=e281] [cursor=pointer]
+        - article [ref=e283]:
+          - table [ref=e285]:
+            - rowgroup [ref=e286]:
+              - row "Name Position Role Salary Actions" [ref=e287]:
+                - columnheader "Name" [ref=e288]
+                - columnheader "Position" [ref=e289]
+                - columnheader "Role" [ref=e290]
+                - columnheader "Salary" [ref=e291]
+                - columnheader "Actions" [ref=e292]
+            - rowgroup [ref=e293]:
+              - row "hardi Employee manager 0 Edit Delete" [ref=e294]:
+                - cell "hardi" [ref=e295]
+                - cell "Employee" [ref=e296]
+                - cell "manager" [ref=e297]
+                - cell "0" [ref=e298]
+                - cell "Edit Delete" [ref=e299]:
+                  - generic [ref=e300]:
+                    - button "Edit" [ref=e301] [cursor=pointer]
+                    - button "Delete" [ref=e302] [cursor=pointer]
+              - row "hardi Employee employee 0 Edit Delete" [ref=e303]:
+                - cell "hardi" [ref=e304]
+                - cell "Employee" [ref=e305]
+                - cell "employee" [ref=e306]
+                - cell "0" [ref=e307]
+                - cell "Edit Delete" [ref=e308]:
+                  - generic [ref=e309]:
+                    - button "Edit" [ref=e310] [cursor=pointer]
+                    - button "Delete" [ref=e311] [cursor=pointer]
+              - row "User1 Active Employee employee 0 Edit Delete" [ref=e312]:
+                - cell "User1 Active" [ref=e313]
+                - cell "Employee" [ref=e314]
+                - cell "employee" [ref=e315]
+                - cell "0" [ref=e316]
+                - cell "Edit Delete" [ref=e317]:
+                  - generic [ref=e318]:
+                    - button "Edit" [ref=e319] [cursor=pointer]
+                    - button "Delete" [ref=e320] [cursor=pointer]
+              - row "suravu Salesman salesman 0 Edit Delete" [ref=e321]:
+                - cell "suravu" [ref=e322]
+                - cell "Salesman" [ref=e323]
+                - cell "salesman" [ref=e324]
+                - cell "0" [ref=e325]
+                - cell "Edit Delete" [ref=e326]:
+                  - generic [ref=e327]:
+                    - button "Edit" [ref=e328] [cursor=pointer]
+                    - button "Delete" [ref=e329] [cursor=pointer]
+              - row "harshit Manager manager 0 Edit Delete" [ref=e330]:
+                - cell "harshit" [ref=e331]
+                - cell "Manager" [ref=e332]
+                - cell "manager" [ref=e333]
+                - cell "0" [ref=e334]
+                - cell "Edit Delete" [ref=e335]:
+                  - generic [ref=e336]:
+                    - button "Edit" [ref=e337] [cursor=pointer]
+                    - button "Delete" [ref=e338] [cursor=pointer]
+              - row "somi Salesman salesman 0 Edit Delete" [ref=e339]:
+                - cell "somi" [ref=e340]
+                - cell "Salesman" [ref=e341]
+                - cell "salesman" [ref=e342]
+                - cell "0" [ref=e343]
+                - cell "Edit Delete" [ref=e344]:
+                  - generic [ref=e345]:
+                    - button "Edit" [ref=e346] [cursor=pointer]
+                    - button "Delete" [ref=e347] [cursor=pointer]
+              - row "romi Salesman salesman 0 Edit Delete" [ref=e348]:
+                - cell "romi" [ref=e349]
+                - cell "Salesman" [ref=e350]
+                - cell "salesman" [ref=e351]
+                - cell "0" [ref=e352]
+                - cell "Edit Delete" [ref=e353]:
+                  - generic [ref=e354]:
+                    - button "Edit" [ref=e355] [cursor=pointer]
+                    - button "Delete" [ref=e356] [cursor=pointer]
+              - row "rita Staff staff 0 Edit Delete" [ref=e357]:
+                - cell "rita" [ref=e358]
+                - cell "Staff" [ref=e359]
+                - cell "staff" [ref=e360]
+                - cell "0" [ref=e361]
+                - cell "Edit Delete" [ref=e362]:
+                  - generic [ref=e363]:
+                    - button "Edit" [ref=e364] [cursor=pointer]
+                    - button "Delete" [ref=e365] [cursor=pointer]
+              - row "bhumi Developer developer 0 Edit Delete" [ref=e366]:
+                - cell "bhumi" [ref=e367]
+                - cell "Developer" [ref=e368]
+                - cell "developer" [ref=e369]
+                - cell "0" [ref=e370]
+                - cell "Edit Delete" [ref=e371]:
+                  - generic [ref=e372]:
+                    - button "Edit" [ref=e373] [cursor=pointer]
+                    - button "Delete" [ref=e374] [cursor=pointer]

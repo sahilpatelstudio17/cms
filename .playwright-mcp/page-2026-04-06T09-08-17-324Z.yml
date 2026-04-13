@@ -1,0 +1,58 @@
+- generic [ref=e224]:
+  - complementary [ref=e225]:
+    - generic [ref=e226]:
+      - paragraph [ref=e227]: SaaS Platform
+      - heading "Company Console" [level=1] [ref=e228]
+    - navigation [ref=e229]:
+      - link "Dashboard" [ref=e230] [cursor=pointer]:
+        - /url: /dashboard
+      - link "Employees" [ref=e231] [cursor=pointer]:
+        - /url: /employees
+      - link "Tasks" [ref=e232] [cursor=pointer]:
+        - /url: /tasks
+      - link "Attendance" [ref=e233] [cursor=pointer]:
+        - /url: /attendance
+      - link "Expenses" [active] [ref=e234] [cursor=pointer]:
+        - /url: /expenses
+      - link "Approvals" [ref=e235] [cursor=pointer]:
+        - /url: /approvals
+      - link "Expense Approvals" [ref=e236] [cursor=pointer]:
+        - /url: /expense-approvals
+      - link "Settings" [ref=e237] [cursor=pointer]:
+        - /url: /settings
+  - generic [ref=e238]:
+    - banner [ref=e239]:
+      - generic [ref=e240]:
+        - generic [ref=e241]:
+          - paragraph [ref=e242]: Welcome back
+          - generic [ref=e243]:
+            - paragraph [ref=e244]: John Admin
+            - generic [ref=e245]: Admin
+        - button "Logout" [ref=e246] [cursor=pointer]
+    - main [ref=e247]:
+      - generic [ref=e300]:
+        - generic [ref=e302]:
+          - heading "Expenses" [level=1] [ref=e303]
+          - paragraph [ref=e304]: View all employee expense requests
+        - generic [ref=e305]:
+          - generic [ref=e306]:
+            - heading "All Employee Expenses" [level=3] [ref=e307]
+            - button "Refresh" [ref=e308] [cursor=pointer]
+          - table [ref=e310]:
+            - rowgroup [ref=e311]:
+              - row "Employee Amount Category Description Status Date" [ref=e312]:
+                - columnheader "Employee" [ref=e313]
+                - columnheader "Amount" [ref=e314]
+                - columnheader "Category" [ref=e315]
+                - columnheader "Description" [ref=e316]
+                - columnheader "Status" [ref=e317]
+                - columnheader "Date" [ref=e318]
+            - rowgroup [ref=e319]:
+              - row "Alice Employee $75.50 Meals Team lunch with clients Pending Apr 6, 2026" [ref=e320]:
+                - cell "Alice Employee" [ref=e321]
+                - cell "$75.50" [ref=e322]
+                - cell "Meals" [ref=e323]
+                - cell "Team lunch with clients" [ref=e324]
+                - cell "Pending" [ref=e325]:
+                  - generic [ref=e326]: Pending
+                - cell "Apr 6, 2026" [ref=e327]

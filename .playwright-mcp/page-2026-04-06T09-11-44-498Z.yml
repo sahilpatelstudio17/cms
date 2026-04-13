@@ -1,0 +1,68 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - generic [ref=e5]:
+      - paragraph [ref=e6]: SaaS Platform
+      - heading "Company Console" [level=1] [ref=e7]
+    - navigation [ref=e8]:
+      - link "Dashboard" [ref=e9] [cursor=pointer]:
+        - /url: /dashboard
+      - link "Tasks" [ref=e10] [cursor=pointer]:
+        - /url: /tasks
+      - link "Attendance" [ref=e11] [cursor=pointer]:
+        - /url: /attendance
+      - link "Expenses" [ref=e12] [cursor=pointer]:
+        - /url: /expenses
+  - generic [ref=e13]:
+    - banner [ref=e14]:
+      - generic [ref=e15]:
+        - generic [ref=e16]:
+          - paragraph [ref=e17]: Welcome back
+          - generic [ref=e18]:
+            - paragraph [ref=e19]: Alice Employee
+            - generic [ref=e20]: Employee
+        - button "Logout" [ref=e21] [cursor=pointer]
+    - main [ref=e22]:
+      - generic [ref=e24]:
+        - generic [ref=e26]:
+          - heading "Expenses" [level=1] [ref=e27]
+          - paragraph [ref=e28]: Submit and track your expense requests.
+        - generic [ref=e29]:
+          - generic [ref=e30]:
+            - heading "Submit Expense" [level=3] [ref=e31]
+            - generic [ref=e32]:
+              - generic [ref=e33]:
+                - generic [ref=e34]: Amount
+                - spinbutton [ref=e35]
+              - generic [ref=e36]:
+                - generic [ref=e37]: Category
+                - combobox [ref=e38]:
+                  - option "Select category" [selected]
+                  - option "Travel"
+                  - option "Meals"
+                  - option "Office Supplies"
+                  - option "Equipment"
+                  - option "Other"
+              - generic [ref=e39]:
+                - generic [ref=e40]: Description
+                - textbox "Describe the expense..." [ref=e41]
+              - button "Submit Expense" [ref=e42] [cursor=pointer]
+          - generic [ref=e43]:
+            - generic [ref=e44]:
+              - heading "Your Expenses" [level=3] [ref=e45]
+              - button "Refresh" [ref=e46] [cursor=pointer]
+            - table [ref=e48]:
+              - rowgroup [ref=e49]:
+                - row "Amount Category Description Status Date" [ref=e50]:
+                  - columnheader "Amount" [ref=e51]
+                  - columnheader "Category" [ref=e52]
+                  - columnheader "Description" [ref=e53]
+                  - columnheader "Status" [ref=e54]
+                  - columnheader "Date" [ref=e55]
+              - rowgroup [ref=e56]:
+                - row "$75.50 Meals Team lunch with clients Approved Apr 6, 2026" [ref=e57]:
+                  - cell "$75.50" [ref=e58]
+                  - cell "Meals" [ref=e59]
+                  - cell "Team lunch with clients" [ref=e60]
+                  - cell "Approved" [ref=e61]:
+                    - generic [ref=e62]: Approved
+                  - cell "Apr 6, 2026" [ref=e63]

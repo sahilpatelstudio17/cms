@@ -1,0 +1,62 @@
+- generic [ref=e1]:
+  - generic [ref=e194]:
+    - complementary [ref=e196]:
+      - generic [ref=e197]:
+        - paragraph [ref=e198]: SaaS Platform
+        - heading "Company Console" [level=1] [ref=e199]
+      - navigation [ref=e200]:
+        - link "Dashboard" [ref=e201] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Team Management" [ref=e202] [cursor=pointer]:
+          - /url: /team
+        - link "Tasks" [ref=e203] [cursor=pointer]:
+          - /url: /tasks
+        - link "Attendance" [ref=e204] [cursor=pointer]:
+          - /url: /attendance
+        - link "Expenses" [ref=e205] [cursor=pointer]:
+          - /url: /expenses
+        - link "Sales" [ref=e206] [cursor=pointer]:
+          - /url: /sales
+        - link "Approvals" [active] [ref=e207] [cursor=pointer]:
+          - /url: /approvals
+        - link "Settings" [ref=e208] [cursor=pointer]:
+          - /url: /settings
+        - link "Users" [ref=e209] [cursor=pointer]:
+          - /url: /users
+        - link "My Profile" [ref=e210] [cursor=pointer]:
+          - /url: /profile
+    - generic [ref=e211]:
+      - banner [ref=e212]:
+        - generic [ref=e213]:
+          - generic [ref=e214]:
+            - paragraph [ref=e215]: Welcome back
+            - generic [ref=e216]:
+              - paragraph [ref=e217]: Admin2
+              - generic [ref=e218]: Admin
+          - button "Logout" [ref=e219] [cursor=pointer]
+      - main [ref=e220]:
+        - generic [ref=e403]:
+          - generic [ref=e405]:
+            - heading "Approvals" [level=1] [ref=e406]
+            - paragraph [ref=e407]: Review and manage pending approval requests.
+          - generic [ref=e409]:
+            - button "User Registrations (0)" [ref=e410] [cursor=pointer]
+            - button "Role Assignments (0)" [ref=e411] [cursor=pointer]
+            - button "Company Signups (0)" [ref=e412] [cursor=pointer]
+            - button "Employee Requests (0)" [ref=e413] [cursor=pointer]
+            - button "Pending User Requests (0)" [ref=e414] [cursor=pointer]
+          - generic [ref=e416]:
+            - img [ref=e417]
+            - heading "No pending user registrations" [level=3] [ref=e419]
+            - paragraph [ref=e420]: All registration requests have been reviewed.
+  - generic:
+    - generic [ref=e422]:
+      - generic [ref=e423]:
+        - paragraph [ref=e424]: Request failed
+        - paragraph [ref=e425]: failed to retrieve approvals
+      - button "x" [ref=e426] [cursor=pointer]
+    - generic [ref=e428]:
+      - generic [ref=e429]:
+        - paragraph [ref=e430]: Error
+        - paragraph [ref=e431]: failed to retrieve approvals
+      - button "x" [ref=e432] [cursor=pointer]
