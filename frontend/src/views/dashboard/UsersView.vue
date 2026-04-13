@@ -442,22 +442,24 @@ onMounted(() => {
           <p class="text-sm text-blue-800 font-medium mb-2">📋 Required columns (in this exact order):</p>
           <div class="overflow-x-auto">
           <table class="min-w-[640px] w-full text-xs text-blue-700">
-            <tr>
-              <td class="font-semibold pr-2">Column 1:</td>
-              <td><strong>Name</strong> - Employee full name</td>
-            </tr>
-            <tr>
-              <td class="font-semibold pr-2">Column 2:</td>
-              <td><strong>Email</strong> - Valid email address</td>
-            </tr>
-            <tr>
-              <td class="font-semibold pr-2">Column 3:</td>
-              <td><strong>Role</strong> - One of: salesman, developer, staff, manager, employee, admin, super_admin</td>
-            </tr>
-            <tr>
-              <td class="font-semibold pr-2">Column 4:</td>
-              <td><strong>Status</strong> - One of: active, inactive, pending</td>
-            </tr>
+            <tbody>
+              <tr>
+                <td class="font-semibold pr-2">Column 1:</td>
+                <td><strong>Name</strong> - Employee full name</td>
+              </tr>
+              <tr>
+                <td class="font-semibold pr-2">Column 2:</td>
+                <td><strong>Email</strong> - Valid email address</td>
+              </tr>
+              <tr>
+                <td class="font-semibold pr-2">Column 3:</td>
+                <td><strong>Role</strong> - One of: salesman, developer, staff, manager, employee, admin, super_admin</td>
+              </tr>
+              <tr>
+                <td class="font-semibold pr-2">Column 4:</td>
+                <td><strong>Status</strong> - One of: active, inactive, pending</td>
+              </tr>
+            </tbody>
           </table>
           </div>
         </div>
