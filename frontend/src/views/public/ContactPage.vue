@@ -43,7 +43,7 @@
           </div>
           <div class="bg-white rounded-lg shadow-lg p-8">
             <h3 class="text-2xl font-bold mb-4">📞 Phone</h3>
-            <p class="text-gray-600">+1 (555) 123-4567<br>Monday - Friday: 9AM - 6PM PST</p>
+            <p class="text-gray-600">+919876543210<br>Monday - Friday: 9AM - 6PM PST</p>
           </div>
           <div class="bg-white rounded-lg shadow-lg p-8">
             <h3 class="text-2xl font-bold mb-4">📧 Email</h3>

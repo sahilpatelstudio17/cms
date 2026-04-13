@@ -287,7 +287,7 @@
           </article>
           <article class="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-200">
             <h3 class="text-2xl font-bold mb-4 text-slate-900">Phone</h3>
-            <p class="text-slate-600">+1 (555) 123-4567<br>Monday - Friday: 9AM - 6PM PST</p>
+            <p class="text-slate-600">+919876543210<br>Monday - Friday: 9AM - 6PM PST</p>
           </article>
           <article class="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-200">
             <h3 class="text-2xl font-bold mb-4 text-slate-900">Email</h3>
