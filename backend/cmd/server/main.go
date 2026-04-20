@@ -15,20 +15,7 @@ import (
 
 func main() {
 	cfg := config.LoadConfig()
-
-	// Database Connect
 	db := config.NewDatabase(cfg.DatabaseURL, cfg.Environment == "production")
-
-	// Create Superadmin (only if not exists)
-	db.Exec(`
-	INSERT INTO users (name,email,password,role)
-	SELECT 'Sahil Admin','sadmin@gmail.com','123456789','superadmin'
-	WHERE NOT EXISTS (
-		SELECT 1 FROM users WHERE email='sadmin@gmail.com'
-	)
-	`)
-
-	// db := config.NewDatabase(cfg.DatabaseURL, cfg.Environment == "production")
 
 	if cfg.Environment == "production" {
 		gin.SetMode(gin.ReleaseMode)
