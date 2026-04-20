@@ -1,28 +1,64 @@
 <template>
   <div class="ui-pro bg-slate-50 text-slate-900">
     <!-- Navbar -->
-    <nav class="sticky top-0 z-50 border-b border-slate-200/70 bg-white/85 backdrop-blur-md">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between h-16">
-          <div class="flex items-center">
-            <h1 class="text-2xl font-bold tracking-tight text-slate-900">CMS Pro</h1>
+    <nav class="sticky top-0 z-50 border-b border-slate-200/70 bg-white/90 backdrop-blur-md">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-14 items-center justify-between sm:h-16">
+          <div class="flex items-center gap-2">
+            <button
+              type="button"
+              class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-slate-300 text-slate-700 md:hidden"
+              aria-label="Toggle menu"
+              @click="isMobileMenuOpen = !isMobileMenuOpen"
+            >
+              <svg v-if="!isMobileMenuOpen" class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <svg v-else class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+
+            <h1 class="text-2xl font-extrabold tracking-tight text-slate-900">CMS</h1>
           </div>
-          <div class="flex items-center space-x-4">
-            <a href="#home" class="text-slate-700 hover:text-slate-900 cursor-pointer">Home</a>
-            <a href="#plans" class="text-slate-700 hover:text-slate-900 cursor-pointer">Plans</a>
-            <a href="#about" class="text-slate-700 hover:text-slate-900 cursor-pointer">About</a>
-            <a href="#vlog" class="text-slate-700 hover:text-slate-900 cursor-pointer">Vlog</a>
-            <a href="#contact" class="text-slate-700 hover:text-slate-900 cursor-pointer">Contact</a>
-            <router-link v-if="!isAuthenticated" to="/login" class="rounded-md bg-slate-900 px-4 py-2 text-white transition hover:bg-slate-800">
+
+          <div class="hidden items-center gap-5 md:flex">
+            <a href="#home" class="text-sm font-semibold text-slate-700 transition hover:text-slate-900">Home</a>
+            <a href="#plans" class="text-sm font-semibold text-slate-700 transition hover:text-slate-900">Plans</a>
+            <a href="#about" class="text-sm font-semibold text-slate-700 transition hover:text-slate-900">About</a>
+            <a href="#vlog" class="text-sm font-semibold text-slate-700 transition hover:text-slate-900">Vlog</a>
+            <a href="#contact" class="text-sm font-semibold text-slate-700 transition hover:text-slate-900">Contact</a>
+          </div>
+
+          <div>
+            <router-link
+              v-if="!isAuthenticated"
+              to="/login"
+              class="rounded-lg bg-slate-900 px-3 py-1.5 text-sm font-semibold text-white transition hover:bg-slate-800 sm:px-4 sm:py-2"
+            >
               Login
             </router-link>
-            <div v-else class="flex items-center space-x-2">
-              <router-link to="/dashboard" class="text-slate-700 hover:text-slate-900">Dashboard</router-link>
-              <button @click="handleLogout" class="rounded-md bg-rose-600 px-4 py-2 text-white transition hover:bg-rose-700">
+            <div v-else class="hidden items-center space-x-2 md:flex">
+              <router-link to="/dashboard" class="text-sm font-semibold text-slate-700 hover:text-slate-900">Dashboard</router-link>
+              <button @click="handleLogout" class="rounded-lg bg-rose-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-rose-700">
                 Logout
               </button>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div v-if="isMobileMenuOpen" class="border-t border-slate-200 bg-white px-4 pb-3 pt-2 md:hidden">
+        <div class="grid grid-cols-2 gap-2">
+          <a
+            v-for="link in mobileNavLinks"
+            :key="link.href"
+            :href="link.href"
+            class="rounded-lg bg-slate-50 px-3 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-100"
+            @click="isMobileMenuOpen = false"
+          >
+            {{ link.label }}
+          </a>
         </div>
       </div>
     </nav>
@@ -39,7 +75,7 @@
         <div class="max-w-3xl">
           <p class="mb-4 inline-block rounded-full bg-white/10 px-4 py-1 text-sm font-semibold uppercase tracking-wider text-slate-200">Modern Business OS</p>
           <h2 class="mb-5 text-5xl font-extrabold leading-tight text-white md:text-6xl">Build, manage, and scale with confidence.</h2>
-          <p class="mb-10 text-lg leading-relaxed text-slate-200 md:text-xl">CMS Pro helps teams track people, sales, tasks, and performance in one beautiful workspace.</p>
+          <p class="mb-10 text-lg leading-relaxed text-slate-200 md:text-xl">CMS helps teams track people, sales, tasks, and performance in one beautiful workspace.</p>
           <div class="flex flex-wrap gap-4">
             <router-link v-if="!isAuthenticated" to="/login" class="rounded-lg border border-white/60 px-8 py-3 font-semibold text-white transition hover:bg-white/15">
               Get Started
@@ -106,7 +142,7 @@
     <!-- Features Section -->
     <section class="bg-white py-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-center mb-12 text-slate-900">Why Choose CMS Pro?</h2>
+        <h2 class="text-3xl font-bold text-center mb-12 text-slate-900">Why Choose CMS?</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <article class="rounded-2xl border border-slate-200 bg-slate-50 p-7">
             <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&w=640&q=80" alt="Business analytics charts" class="mb-5 h-40 w-full rounded-xl object-cover" />
@@ -130,13 +166,13 @@
     <!-- About Section -->
     <section id="about" class="bg-slate-100 py-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-4xl font-bold text-center mb-12 text-slate-900">About CMS Pro</h2>
+        <h2 class="text-4xl font-bold text-center mb-12 text-slate-900">About CMS</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-14">
           <div>
             <h3 class="text-2xl font-bold mb-4 text-slate-900">Our Mission</h3>
             <p class="text-slate-700 mb-4">
-              At CMS Pro, our mission is to empower businesses of all sizes with intuitive, powerful, and affordable content management solutions. We believe that technology should simplify business operations, not complicate them.
+              At CMS, our mission is to empower businesses of all sizes with intuitive, powerful, and affordable content management solutions. We believe that technology should simplify business operations, not complicate them.
             </p>
             <p class="text-slate-700">
               We're committed to continuously innovating and improving our platform to meet the evolving needs of our customers.
@@ -199,7 +235,7 @@
     <!-- Vlog Section -->
     <section id="vlog" class="py-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-4xl font-bold text-center mb-12 text-slate-900">CMS Pro Vlog</h2>
+        <h2 class="text-4xl font-bold text-center mb-12 text-slate-900">CMS Vlog</h2>
 
         <div class="overflow-hidden rounded-2xl bg-white shadow-lg ring-1 ring-slate-200 mb-12">
           <div class="relative aspect-video">
@@ -207,8 +243,8 @@
             <div class="absolute inset-0 bg-slate-900/35"></div>
           </div>
           <div class="p-6">
-            <h3 class="text-3xl font-bold mb-2 text-slate-900">Getting Started with CMS Pro</h3>
-            <p class="text-slate-600 mb-4">In this comprehensive guide, we'll walk you through all the basics of CMS Pro and show you how to set up your first project in just 10 minutes.</p>
+            <h3 class="text-3xl font-bold mb-2 text-slate-900">Getting Started with CMS</h3>
+            <p class="text-slate-600 mb-4">In this comprehensive guide, we'll walk you through all the basics of CMS and show you how to set up your first project in just 10 minutes.</p>
             <div class="flex items-center text-slate-500">
               <span>Posted on April 1, 2026</span>
               <span class="ml-4">Duration: 12:45</span>
@@ -222,7 +258,7 @@
             <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=900&q=80" alt="Advanced features dashboard" class="aspect-video w-full object-cover" />
             <div class="p-6">
               <h4 class="font-bold text-lg mb-2 text-slate-900">Advanced Features Explained</h4>
-              <p class="text-slate-600 text-sm mb-4">Discover the powerful features that make CMS Pro stand out from the competition.</p>
+              <p class="text-slate-600 text-sm mb-4">Discover the powerful features that make CMS stand out from the competition.</p>
               <div class="text-slate-500 text-sm">March 28, 2026 • 18:32</div>
             </div>
           </article>
@@ -231,7 +267,7 @@
             <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=900&q=80" alt="User management workflow" class="aspect-video w-full object-cover" />
             <div class="p-6">
               <h4 class="font-bold text-lg mb-2 text-slate-900">User Management Best Practices</h4>
-              <p class="text-slate-600 text-sm mb-4">Learn how to effectively manage users and control access in your CMS Pro instance.</p>
+              <p class="text-slate-600 text-sm mb-4">Learn how to effectively manage users and control access in your CMS instance.</p>
               <div class="text-slate-500 text-sm">March 25, 2026 • 15:20</div>
             </div>
           </article>
@@ -249,7 +285,7 @@
             <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=900&q=80" alt="Security lock concept" class="aspect-video w-full object-cover" />
             <div class="p-6">
               <h4 class="font-bold text-lg mb-2 text-slate-900">Security Features Overview</h4>
-              <p class="text-slate-600 text-sm mb-4">Understand how CMS Pro keeps your data safe with enterprise-grade security.</p>
+              <p class="text-slate-600 text-sm mb-4">Understand how CMS keeps your data safe with enterprise-grade security.</p>
               <div class="text-slate-500 text-sm">March 19, 2026 • 11:45</div>
             </div>
           </article>
@@ -258,7 +294,7 @@
             <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80" alt="Integration and APIs concept" class="aspect-video w-full object-cover" />
             <div class="p-6">
               <h4 class="font-bold text-lg mb-2 text-slate-900">Integration Possibilities</h4>
-              <p class="text-slate-600 text-sm mb-4">Explore how to integrate CMS Pro with your favorite third-party tools.</p>
+              <p class="text-slate-600 text-sm mb-4">Explore how to integrate CMS with your favorite third-party tools.</p>
               <div class="text-slate-500 text-sm">March 16, 2026 • 13:20</div>
             </div>
           </article>
@@ -384,7 +420,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h4 class="text-lg font-bold mb-4 text-white">CMS Pro</h4>
+            <h4 class="text-lg font-bold mb-4 text-white">CMS</h4>
             <p class="text-slate-400">Your trusted content management system.</p>
           </div>
           <div>
@@ -413,7 +449,7 @@
           </div>
         </div>
         <div class="border-t border-slate-700 pt-8 text-center text-slate-500">
-          <p>&copy; 2026 CMS Pro. All rights reserved.</p>
+          <p>&copy; 2026 CMS. All rights reserved.</p>
         </div>
       </div>
     </footer>
@@ -430,6 +466,15 @@ const router = useRouter();
 const authStore = useAuthStore();
 
 const isAuthenticated = computed(() => authStore.isAuthenticated);
+const isMobileMenuOpen = ref(false);
+
+const mobileNavLinks = [
+  { label: "Home", href: "#home" },
+  { label: "Plans", href: "#plans" },
+  { label: "About", href: "#about" },
+  { label: "Vlog", href: "#vlog" },
+  { label: "Contact", href: "#contact" },
+];
 
 const form = reactive({
   name: "",
@@ -481,6 +526,7 @@ const isFormValid = computed(() => Object.values(formErrors.value).every((error)
 const formStatus = ref(null);
 
 const handleLogout = () => {
+  isMobileMenuOpen.value = false;
   authStore.logout();
   router.push("/");
 };

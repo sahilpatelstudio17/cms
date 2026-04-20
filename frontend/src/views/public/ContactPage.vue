@@ -5,7 +5,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
           <div class="flex items-center">
-            <h1 class="text-2xl font-bold text-slate-900">CMS Pro</h1>
+            <h1 class="text-2xl font-bold text-slate-900">CMS</h1>
           </div>
           <div class="flex items-center space-x-4">
             <router-link to="/" class="text-gray-700 hover:text-slate-900">Home</router-link>
@@ -152,7 +152,7 @@
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-8">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <p>&copy; 2026 CMS Pro. All rights reserved.</p>
+        <p>&copy; 2026 CMS. All rights reserved.</p>
       </div>
     </footer>
   </div>

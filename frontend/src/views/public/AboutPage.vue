@@ -5,7 +5,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
           <div class="flex items-center">
-            <h1 class="text-2xl font-bold text-slate-900">CMS Pro</h1>
+            <h1 class="text-2xl font-bold text-slate-900">CMS</h1>
           </div>
           <div class="flex items-center space-x-4">
             <router-link to="/" class="text-gray-700 hover:text-slate-900">Home</router-link>
@@ -28,8 +28,8 @@
 
     <!-- Hero Section -->
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-      <h1 class="text-4xl font-bold text-gray-900 mb-6">About CMS Pro</h1>
-      <p class="text-xl text-gray-600 mb-12">Learn more about our mission, vision, and the team behind CMS Pro</p>
+      <h1 class="text-4xl font-bold text-gray-900 mb-6">About CMS</h1>
+      <p class="text-xl text-gray-600 mb-12">Learn more about our mission, vision, and the team behind CMS</p>
     </section>
 
     <!-- Mission Section -->
@@ -39,7 +39,7 @@
           <div>
             <h2 class="text-3xl font-bold mb-4">Our Mission</h2>
             <p class="text-gray-600 mb-4">
-              At CMS Pro, our mission is to empower businesses of all sizes with intuitive, powerful, and affordable content management solutions. We believe that technology should simplify business operations, not complicate them.
+              At CMS, our mission is to empower businesses of all sizes with intuitive, powerful, and affordable content management solutions. We believe that technology should simplify business operations, not complicate them.
             </p>
             <p class="text-gray-600">
               We're committed to continuously innovating and improving our platform to meet the evolving needs of our customers.
@@ -142,7 +142,7 @@
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-8">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <p>&copy; 2026 CMS Pro. All rights reserved.</p>
+        <p>&copy; 2026 CMS. All rights reserved.</p>
       </div>
     </footer>
   </div>

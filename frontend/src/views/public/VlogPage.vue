@@ -5,7 +5,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
           <div class="flex items-center">
-            <h1 class="text-2xl font-bold text-slate-900">CMS Pro</h1>
+            <h1 class="text-2xl font-bold text-slate-900">CMS</h1>
           </div>
           <div class="flex items-center space-x-4">
             <router-link to="/" class="text-gray-700 hover:text-slate-900">Home</router-link>
@@ -28,8 +28,8 @@
 
     <!-- Hero Section -->
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-      <h1 class="text-4xl font-bold text-gray-900 mb-6">CMS Pro Vlog</h1>
-      <p class="text-xl text-gray-600">Learn, grow, and master CMS Pro with our video tutorials and insights</p>
+      <h1 class="text-4xl font-bold text-gray-900 mb-6">CMS Vlog</h1>
+      <p class="text-xl text-gray-600">Learn, grow, and master CMS with our video tutorials and insights</p>
     </section>
 
     <!-- Featured Video -->
@@ -40,12 +40,12 @@
           <div class="aspect-video bg-gray-300 flex items-center justify-center">
             <div class="text-center">
               <div class="text-6xl mb-4">▶️</div>
-              <p class="text-gray-600">Getting Started with CMS Pro</p>
+              <p class="text-gray-600">Getting Started with CMS</p>
             </div>
           </div>
           <div class="p-6">
-            <h3 class="text-2xl font-bold mb-2">Getting Started with CMS Pro</h3>
-            <p class="text-gray-600 mb-4">In this comprehensive guide, we'll walk you through all the basics of CMS Pro and show you how to set up your first project in just 10 minutes.</p>
+            <h3 class="text-2xl font-bold mb-2">Getting Started with CMS</h3>
+            <p class="text-gray-600 mb-4">In this comprehensive guide, we'll walk you through all the basics of CMS and show you how to set up your first project in just 10 minutes.</p>
             <div class="flex items-center text-gray-500">
               <span>Posted on April 1, 2026</span>
               <span class="ml-4">Duration: 12:45</span>
@@ -67,7 +67,7 @@
             </div>
             <div class="p-6">
               <h3 class="font-bold text-lg mb-2">Advanced Features Explained</h3>
-              <p class="text-gray-600 text-sm mb-4">Discover the powerful features that make CMS Pro stand out from the competition.</p>
+              <p class="text-gray-600 text-sm mb-4">Discover the powerful features that make CMS stand out from the competition.</p>
               <div class="text-gray-500 text-sm">March 28, 2026 • 18:32</div>
             </div>
           </div>
@@ -79,7 +79,7 @@
             </div>
             <div class="p-6">
               <h3 class="font-bold text-lg mb-2">User Management Best Practices</h3>
-              <p class="text-gray-600 text-sm mb-4">Learn how to effectively manage users and control access in your CMS Pro instance.</p>
+              <p class="text-gray-600 text-sm mb-4">Learn how to effectively manage users and control access in your CMS instance.</p>
               <div class="text-gray-500 text-sm">March 25, 2026 • 15:20</div>
             </div>
           </div>
@@ -103,7 +103,7 @@
             </div>
             <div class="p-6">
               <h3 class="font-bold text-lg mb-2">Security Features Overview</h3>
-              <p class="text-gray-600 text-sm mb-4">Understand how CMS Pro keeps your data safe with enterprise-grade security.</p>
+              <p class="text-gray-600 text-sm mb-4">Understand how CMS keeps your data safe with enterprise-grade security.</p>
               <div class="text-gray-500 text-sm">March 19, 2026 • 11:45</div>
             </div>
           </div>
@@ -115,7 +115,7 @@
             </div>
             <div class="p-6">
               <h3 class="font-bold text-lg mb-2">Integration Possibilities</h3>
-              <p class="text-gray-600 text-sm mb-4">Explore how to integrate CMS Pro with your favorite third-party tools.</p>
+              <p class="text-gray-600 text-sm mb-4">Explore how to integrate CMS with your favorite third-party tools.</p>
               <div class="text-gray-500 text-sm">March 16, 2026 • 13:20</div>
             </div>
           </div>
@@ -182,7 +182,7 @@
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-8">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <p>&copy; 2026 CMS Pro. All rights reserved.</p>
+        <p>&copy; 2026 CMS. All rights reserved.</p>
       </div>
     </footer>
   </div>
