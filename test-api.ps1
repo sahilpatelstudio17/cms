@@ -26,7 +26,7 @@ try {
     Write-Host "`n2. Testing GET /auth/me..." -ForegroundColor Green
     $headers = @{ "Authorization" = "Bearer $token" }
     
-    $meResponse = Invoke-WebRequest -Uri "$apiUrl/auth/me" `
+    $meResponse = Invoke-WebRequest -Uri "$apiUrl/api/auth/me" `
         -Method GET `
         -Headers $headers `
         -ErrorAction Stop
