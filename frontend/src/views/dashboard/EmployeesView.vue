@@ -278,7 +278,7 @@ onMounted(() => {
               @change="handleBulkImport"
               class="hidden"
             />
-            <Button 
+            <!-- <Button 
               v-if="canManageEmployees"
               variant="secondary" 
               size="sm" 
@@ -286,7 +286,7 @@ onMounted(() => {
               :loading="saving"
             >
               📊 Import Excel
-            </Button>
+            </Button> -->
             <Button variant="secondary" size="sm" @click="loadEmployees">Refresh</Button>
           </div>
         </div>

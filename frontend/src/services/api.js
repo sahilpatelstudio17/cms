@@ -4,7 +4,8 @@ import { beginLoading, endLoading, showToast } from "./ui";
 const ACCESS_TOKEN_KEY = "access_token";
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || "http://localhost:8080/api",
+  // baseURL: import.meta.env.VITE_API_BASE_URL || "http://localhost:8080/api",
+  baseURL: import.meta.env.VITE_API_BASE_URL || "https://cms-6eiy.onrender.com/api",
   timeout: 10000,
   headers: {
     "Content-Type": "application/json",

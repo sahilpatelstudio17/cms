@@ -1,6 +1,7 @@
 const fetch = require('node-fetch').default || require('node-fetch');
 
-const API_URL = 'http://localhost:8080/api';
+// const API_URL = 'http://localhost:8080/api';
+const API_URL = 'https://cms-6eiy.onrender.com/api';
 
 async function test() {
   try {

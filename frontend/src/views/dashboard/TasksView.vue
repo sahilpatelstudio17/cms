@@ -21,6 +21,7 @@ const loading = computed(() => tasksStore.loading || employeesStore.loading);
 const editingId = ref(null);
 const deletingTaskId = ref(null);
 const showDeleteModal = ref(false);
+const taskFilter = ref("all");
 
 const canManageTasks = computed(() => auth.userRole === "admin" || auth.userRole === "manager");
 
@@ -29,11 +30,24 @@ const currentUserEmployeeId = computed(() => {
   return employee?.id;
 });
 
+const filteredTasks = computed(() => {
+  if (taskFilter.value === "my") {
+    if (!currentUserEmployeeId.value) return [];
+    return tasks.value.filter((task) => task.assigned_to === currentUserEmployeeId.value);
+  }
+
+  return tasks.value;
+});
+
 function canChangeTaskStatus(task) {
   // Manager/Admin can change any task status
   if (canManageTasks.value) return true;
   // Other users can only change status of tasks assigned to them
   return task.assigned_to === currentUserEmployeeId.value;
+}
+
+function setTaskFilter(mode) {
+  taskFilter.value = mode;
 }
 
 const form = ref({
@@ -264,12 +278,32 @@ onMounted(async () => {
       <Card>
         <div class="mb-4 flex items-center justify-between">
           <h3 class="text-lg font-semibold">Task List</h3>
-          <Button variant="secondary" size="sm" @click="loadPageData">Refresh</Button>
+          <div class="flex items-center gap-2">
+            <div class="inline-flex rounded-lg border border-slate-300 p-1">
+              <button
+                type="button"
+                class="rounded-md px-3 py-1.5 text-xs font-semibold transition"
+                :class="taskFilter === 'my' ? 'bg-slate-900 text-white' : 'text-slate-700 hover:bg-slate-100'"
+                @click="setTaskFilter('my')"
+              >
+                My Tasks
+              </button>
+              <button
+                type="button"
+                class="rounded-md px-3 py-1.5 text-xs font-semibold transition"
+                :class="taskFilter === 'all' ? 'bg-slate-900 text-white' : 'text-slate-700 hover:bg-slate-100'"
+                @click="setTaskFilter('all')"
+              >
+                All Tasks
+              </button>
+            </div>
+            <Button variant="secondary" size="sm" @click="loadPageData">Refresh</Button>
+          </div>
         </div>
 
         <p v-if="loading" class="text-slate-500">Loading tasks...</p>
         <div v-else class="space-y-3">
-          <article v-for="task in tasks" :key="task.id" class="rounded-xl border border-slate-200 p-4">
+          <article v-for="task in filteredTasks" :key="task.id" class="rounded-xl border border-slate-200 p-4">
             <div class="flex items-start justify-between gap-3">
               <div>
                 <h4 class="font-semibold text-slate-900">{{ task.title }}</h4>
@@ -299,7 +333,9 @@ onMounted(async () => {
             </div>
           </article>
 
-          <p v-if="tasks.length === 0" class="py-6 text-center text-slate-500">No tasks found.</p>
+          <p v-if="filteredTasks.length === 0" class="py-6 text-center text-slate-500">
+            {{ taskFilter === "my" ? "No tasks assigned to you." : "No tasks found." }}
+          </p>
         </div>
       </Card>
     </div>

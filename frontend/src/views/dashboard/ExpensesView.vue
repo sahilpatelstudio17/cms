@@ -4,13 +4,13 @@
       <div>
         <h1 class="text-3xl font-bold tracking-tight text-slate-900">Expenses</h1>
         <p class="mt-1 text-sm text-slate-600">
-          {{ isAdmin ? "View all employee expense requests" : "Submit and track your expense requests." }}
+          {{ canApproveExpenses ? "View and manage employee expense requests" : "Submit and track your expense requests." }}
         </p>
       </div>
     </div>
 
     <!-- EMPLOYEE VIEW -->
-    <div v-if="!isAdmin" class="grid gap-6 lg:grid-cols-[340px_1fr]">
+    <div v-if="!canApproveExpenses" class="grid gap-6 lg:grid-cols-[340px_1fr]">
       <!-- Submit Expense Form -->
       <div class="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
         <h3 class="text-lg font-semibold text-slate-900">Submit Expense</h3>
@@ -132,7 +132,7 @@
       </div>
     </div>
 
-    <!-- ADMIN VIEW -->
+    <!-- APPROVER VIEW (ADMIN / MANAGER) -->
     <div v-else class="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
       <div class="mb-4 flex items-center justify-between">
         <h3 class="text-lg font-semibold text-slate-900">All Employee Expenses</h3>
@@ -261,7 +261,7 @@ import { useExpensesStore } from "../../stores/expenses";
 
 const auth = useAuthStore();
 const expensesStore = useExpensesStore();
-const isAdmin = computed(() => auth.userRole === "admin");
+const canApproveExpenses = computed(() => auth.userRole === "admin" || auth.userRole === "manager");
 
 const loading = computed(() => expensesStore.loading);
 const saving = ref(false);
@@ -411,7 +411,7 @@ async function confirmReject() {
   try {
     actionInProgress.value = rejectExpenseId.value;
     await expensesStore.rejectExpenseRequest(rejectExpenseId.value, {
-      message: rejectMessage.value || "Expense rejected by admin",
+      message: rejectMessage.value || "Expense rejected by approver",
     });
     showToast({
       title: "Success",

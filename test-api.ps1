@@ -1,6 +1,7 @@
 # PowerShell test script for /auth/me endpoint
 
-$apiUrl = "http://localhost:8080/api"
+# $apiUrl = "http://localhost:8080/api"
+$apiUrl = "https://cms-6eiy.onrender.com/api"
 
 # Step 1: Login
 Write-Host "1. Testing login..." -ForegroundColor Green
