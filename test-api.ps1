@@ -11,7 +11,7 @@ try {
         password = "password123"
     } | ConvertTo-Json
 
-    $loginResponse = Invoke-WebRequest -Uri "$apiUrl/auth/login" `
+    $loginResponse = Invoke-WebRequest -Uri "$apiUrl/api/auth/login" `
         -Method POST `
         -ContentType "application/json" `
         -Body $loginBody `
