@@ -113,7 +113,7 @@ func SeedDatabase(db *gorm.DB) error {
 	users := []models.User{
 		{
 			Name:      "System SuperAdmin",
-			Email:     "superadmin@company.com",
+			Email:     "superadmin@gmail.com",
 			Password:  superAdminPwd,
 			Role:      "super_admin",
 			CompanyID: company.ID,
@@ -308,7 +308,7 @@ func SeedDatabase(db *gorm.DB) error {
 	log.Println("\n🎉 Database seeding completed successfully!")
 	log.Println("\n📝 Test Credentials:")
 	log.Println("   Super Admin:")
-	log.Println("   - Email: superadmin@company.com")
+	log.Println("   - Email: superadmin@gmail.com")
 	log.Println("   - Password: SuperAdmin@123")
 	log.Println("   - Role: Can create/manage Admins")
 	log.Println("\n   Admin:")
