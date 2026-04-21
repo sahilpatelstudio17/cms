@@ -2,6 +2,7 @@ package main
 
 import (
 	"log"
+	"os"
 
 	"cms/config"
 	"cms/internal/controllers"
@@ -25,6 +26,14 @@ func main() {
 	router.Use(gin.Logger(), gin.Recovery())
 	router.Use(middleware.CORS())
 
+	// Health route
+	router.GET("/", func(c *gin.Context) {
+		c.JSON(200, gin.H{
+			"message": "CMS Backend Running",
+		})
+	})
+
+	// repositories
 	authRepo := repositories.NewAuthRepository(db)
 	companyRepo := repositories.NewCompanyRepository(db)
 	employeeRepo := repositories.NewEmployeeRepository(db)
@@ -35,6 +44,7 @@ func main() {
 	expenseRepo := repositories.NewExpenseRepository(db)
 	saleRepo := repositories.NewSaleRepository(db)
 
+	// services
 	authService := services.NewAuthService(authRepo, approvalRepo, cfg.JWTSecret, cfg.JWTExpiresHours)
 	companyService := services.NewCompanyService(companyRepo)
 	employeeService := services.NewEmployeeService(employeeRepo)
@@ -49,6 +59,7 @@ func main() {
 	userImportService := services.NewUserImportService(userRepo, employeeRepo)
 	roleAssignmentService := services.NewRoleAssignmentService(approvalRepo, employeeRepo, userRepo, companyRepo)
 
+	// controllers
 	authController := controllers.NewAuthController(authService, approvalService)
 	companyController := controllers.NewCompanyController(companyService)
 	employeeController := controllers.NewEmployeeController(employeeService, userRepo, userManagementService)
@@ -80,8 +91,14 @@ func main() {
 		JWTSecret:                cfg.JWTSecret,
 	})
 
-	log.Printf("server running on :%s", cfg.Port)
-	if err := router.Run(":" + cfg.Port); err != nil {
-		log.Fatalf("failed to run server: %v", err)
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = cfg.Port
 	}
+	if port == "" {
+		port = "10000"
+	}
+
+	log.Printf("server running on :%s", port)
+	log.Fatal(router.Run(":" + port))
 }
